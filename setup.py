@@ -2,7 +2,7 @@
 Flask-fillin
 ------------
 
-This Flask extension provides simple utilities for testing your forms in 
+This Flask extension provides simple utilities for testing your forms in
 Flask application.
 
 Links
@@ -31,7 +31,11 @@ setup(
     platforms='any',
     install_requires=[
         'Flask',
-        'lxml'
+        'lxml',
+        'cssselect'
+    ],
+    test_requires=[
+        'cssselect'
     ],
     classifiers=[
         'Environment :: Web Environment',
